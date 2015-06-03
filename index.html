@@ -8,26 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
 </head>
 <body>
+	
+	<label id="msg"> Please Fill Up </label>
 	<div class="form-fields">
 		<label>Name</label>
-		<input type="text" id="nameOfUser"/>
+		<input type="text" id="nameOfUser" class="required"/>
 	</div>
 	<div class="form-fields">
 		<label>City</label>
-		<input type="text" id="city"/>
+		<input type="text" id="city" class="required"/>
 	</div>
 	<div class="form-fields">
 		<label>State</label>
-		<input type="text" id="state"/>
+		<input type="text" id="state" class="required"/>
 	</div>
 	<div class="form-fields">
 		<label>Country</label>
-		<input type="text" id="country"/>
+		<input type="text" id="country" class="required"/>
 	</div>
 	<div class="form-fields">
 		<label>Gender</label>
-		<label><input type="radio" name="gender" checked="checked"/> Male</label>
-		<label><input type="radio" name="gender"/> Female</label>
+		<select id="gender">
+			<option selected="selected" value="M">Male</option>
+			<option value="F">Female</option>
+		</select>
 	</div>
 
 	<input type="button" id="btnAddUser" value="Add User"/>
