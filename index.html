@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding User To DB</title>
+	<script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<body>
+	<div class="form-fields">
+		<label>Name</label>
+		<input type="text" id="nameOfUser"/>
+	</div>
+	<div class="form-fields">
+		<label>City</label>
+		<input type="text" id="city"/>
+	</div>
+	<div class="form-fields">
+		<label>State</label>
+		<input type="text" id="state"/>
+	</div>
+	<div class="form-fields">
+		<label>Country</label>
+		<input type="text" id="country"/>
+	</div>
+	<div class="form-fields">
+		<label>Gender</label>
+		<label><input type="radio" name="gender" checked="checked"/> Male</label>
+		<label><input type="radio" name="gender"/> Female</label>
+	</div>
+
+	<input type="button" id="btnAddUser" value="Add User"/>
+
+</body>
+</html>
